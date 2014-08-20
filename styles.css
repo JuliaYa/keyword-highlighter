@@ -1,0 +1,89 @@
+.keyword-highlighter{
+	position: relative;
+	width: 50%;
+	height: 300px;
+	padding:20px;
+	background-color: #EFECE2;
+	overflow: hidden;
+}
+.keyword-highlighter textarea{
+	position: absolute;
+	top:20px;
+	left:20px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	outline:none;
+	border: none;
+	color:transparent;
+	/* Mozilla FireFox */
+-moz-user-select: none;
+
+/* old Safari, old Chrome */
+-khtml-user-select: none;
+
+/* new Safari, new Chrome */
+-webkit-user-select: none;
+
+/* IE 9-10 */
+-ms-user-select:none
+
+/* all css3 */
+user-select: none;
+}
+.keyword-highlighter .textarea-imitation{
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+}
+
+.key_word{
+	border: 2px solid green;
+	border-radius: 3px;
+	margin-left: 3px;
+}
+
+/*----cursor animation-----*/
+.keyword-highlighter {
+	position: relative;
+}
+.keyword-highlighter .cursor{
+	position: absolute;
+	width: 2px;
+	height: 16px;
+	background-color: #000;
+}
+
+.keyword-highlighter .cursor.hidden {
+	opacity: 0.2;
+}
+
+.keyword-highlighter .cursor {
+	-webkit-animation-duration: 2s;
+  	-webkit-animation-name: blink;
+  	-webkit-animation-iteration-count: infinite
+	animation-duration: 2s;
+  	animation-name: blink;
+	animation-iteration-count: infinite
+
+}
+.hidden{
+	visibility: hidden;
+}
+
+/*@-webkit-keyframes blink {
+    from {
+	visibility: visible;
+    }
+    to {
+	visibility: hidden;
+    }	
+}
+@keyframes blink {
+    from {
+	visibility: visible;
+    }
+    to {
+	visibility: hidden;
+    }	
+}*/

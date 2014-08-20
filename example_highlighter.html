@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>My highlight example</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="http://code.angularjs.org/1.2.16/angular.min.js"></script>
+
+  <script src="controller.js"></script>
+</head>
+<body  ng-controller="Highlighter">
+
+<div class='keyword-highlighter'>
+	<span id='cursor' class='cursor'></span>
+	<div id='fakeText' class='textarea-imitation'></div>
+	<textarea id="keyWords" ng-model="text">{{text}}</textarea>
+</div>
+
+</body>
+</html>
